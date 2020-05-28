@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="714.0" prefWidth="1038.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.SignUpPageConroller">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="34.0" prefWidth="213.0" text="Welcome Students">
+               <font>
+                  <Font name="Impact" size="27.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <Pane prefHeight="100.0" prefWidth="365.0">
+                     <children>
+                        <JFXTextField fx:id="firstnameTextBox" focusColor="#dabf55" layoutX="101.0" layoutY="35.0" prefHeight="31.0" prefWidth="245.0" promptText="Firstname" unFocusColor="#e85454" />
+                        <FontAwesomeIconView glyphName="USER" layoutX="52.0" layoutY="56.0" size="16" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="100.0" prefWidth="325.0">
+                     <children>
+                        <JFXTextField fx:id="lastnameTextBox" focusColor="#dabf55" layoutX="42.0" layoutY="35.0" prefWidth="245.0" promptText="Lastname" unFocusColor="#e85454" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <Pane prefHeight="100.0" prefWidth="308.0">
+                     <children>
+                        <JFXTextField fx:id="usernameTextBox" focusColor="#dabf55" layoutX="63.0" layoutY="35.0" prefWidth="245.0" promptText="Username" unFocusColor="#e85454" />
+                        <FontAwesomeIconView glyphName="USER" layoutX="14.0" layoutY="56.0" size="16" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="100.0" prefWidth="302.0">
+                     <children>
+                        <JFXTextField fx:id="passwordTextBox" focusColor="#dabf55" layoutX="57.0" layoutY="35.0" prefWidth="245.0" promptText="Password" unFocusColor="#e85454" />
+                        <FontAwesomeIconView glyphName="KEY" layoutX="14.0" layoutY="55.0" size="16" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Pane prefHeight="100.0" prefWidth="368.0">
+                     <children>
+                        <JFXTextField fx:id="emailIdTextBox" focusColor="#dabf55" layoutX="79.0" layoutY="34.0" prefHeight="31.0" prefWidth="245.0" promptText="Email ID" unFocusColor="#e85454" />
+                        <FontAwesomeIconView glyphName="PAPER_PLANE_ALT" layoutX="30.0" layoutY="55.0" size="16" wrappingWidth="14.571428298950195" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="100.0" prefWidth="318.0">
+                     <children>
+                        <JFXTextField fx:id="mobileNoTextBox" focusColor="#dabf55" layoutX="52.0" layoutY="35.0" prefHeight="31.0" prefWidth="245.0" promptText="Mobile No" unFocusColor="#e85454" />
+                        <FontAwesomeIconView glyphName="ELLIPSIS_H" layoutX="14.0" layoutY="56.0" size="16" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="521.0" prefHeight="88.0" prefWidth="1038.0" spacing="100.0">
+               <children>
+                  <JFXButton fx:id="signupButton" prefHeight="41.0" prefWidth="154.0" styleClass="buton" stylesheets="@../style.css" text="Signup" />
+                  <JFXButton fx:id="buttoncancle" cancelButton="true" prefHeight="41.0" prefWidth="154.0" styleClass="buton" stylesheets="@../style.css" text="Cancle" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <AnchorPane prefHeight="103.0" prefWidth="1725.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" layoutY="-6.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="176.0" fitWidth="1045.0" nodeOrientation="INHERIT" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/online-exam-portal-500x500.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

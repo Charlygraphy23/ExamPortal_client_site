@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="1089.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.LoginPageController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="732.0" prefWidth="1089.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label text="Login Page">
+                     <font>
+                        <Font name="Impact" size="32.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+                     <children>
+                        <FontAwesomeIconView glyphName="USER" size="18" />
+                        <JFXTextField fx:id="username" focusColor="#ff7300" prefHeight="37.0" prefWidth="350.0" promptText="Username" text="dip12" unFocusColor="#00b7ff" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="346.0" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+                     <children>
+                        <FontAwesomeIconView glyphName="KEY" size="18" />
+                        <JFXPasswordField fx:id="password" focusColor="#ff8400" prefHeight="37.0" prefWidth="350.0" promptText="Password" text="d*" unFocusColor="#0077ff" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="396.0" prefHeight="60.0" prefWidth="1089.0" spacing="10.0">
+                     <children>
+                        <Separator prefHeight="0.0" prefWidth="926.0" />
+                        <Label fx:id="register" prefHeight="21.0" prefWidth="300.0" text="Not yet Registered ?">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets right="150.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="466.0" prefHeight="60.0" prefWidth="1089.0">
+                     <children>
+                        <JFXButton fx:id="loginButton" prefHeight="38.0" prefWidth="395.0" styleClass="buton" stylesheets="@../style.css" text="Login" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

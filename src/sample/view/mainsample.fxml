@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#close" prefHeight="772.0" prefWidth="1249.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.MainPageController">
+   <top>
+      <AnchorPane prefHeight="158.0" prefWidth="1031.0" style="-fx-background-color: #0069c0;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="367.0" opacity="0.62" prefHeight="44.0" prefWidth="298.0" text="Examination Portal" textFill="WHITE" AnchorPane.leftAnchor="367.0" AnchorPane.rightAnchor="366.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Bodoni MT Bold" size="33.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <Label fx:id="timmer" alignment="CENTER" layoutX="175.0" layoutY="86.0" prefHeight="56.0" prefWidth="124.0" text="00:00" textFill="WHITE" AnchorPane.leftAnchor="175.0">
+               <font>
+                  <Font name="Bodoni MT Bold" size="47.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <Label fx:id="logOutButton" alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="30.0" layoutX="1055.0" layoutY="100.0" prefHeight="21.0" prefWidth="151.0" stylesheets="@../style.css" text="Logout" textFill="WHITE" AnchorPane.bottomAnchor="27.0" AnchorPane.rightAnchor="43.0">
+               <graphic>
+                  <FontAwesomeIconView id="out" fill="WHITE" glyphName="EXTERNAL_LINK_SQUARE" size="30" wrappingWidth="15.0" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="102.0" prefHeight="27.0" prefWidth="168.0" text="Time Remainning -" textFill="WHITE" AnchorPane.leftAnchor="14.0">
+               <font>
+                  <Font name="Arial Narrow Bold" size="18.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <Label fx:id="namePlate" alignment="CENTER" layoutY="44.0" prefHeight="31.0" prefWidth="1249.0" style="-fx-background-color: #e3f2fd;" text="Welcome - Bro" textFill="#07076f" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="519.0" prefWidth="1249.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="questionNumber" alignment="CENTER" layoutX="14.0" layoutY="49.0" prefHeight="33.0" prefWidth="52.0" text="Q.1">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="mQuestions" alignment="TOP_LEFT" layoutX="66.0" layoutY="49.0" prefHeight="126.0" prefWidth="943.0" text="this is my fiesr day in school then i promoted to principle" wrapText="true" AnchorPane.leftAnchor="66.0" AnchorPane.rightAnchor="22.0">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="21.0" />
+               </font>
+               <padding>
+                  <Insets left="2.0" top="2.0" />
+               </padding>
+            </Label>
+            <JFXRadioButton fx:id="fistAnswar" contentDisplay="CENTER" focusTraversable="false" layoutX="66.0" layoutY="225.0" prefHeight="37.0" prefWidth="431.0" text="RadioButton">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="secondAnswar" contentDisplay="CENTER" focusTraversable="false" layoutX="66.0" layoutY="289.0" prefHeight="37.0" prefWidth="431.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="thirdAnswar" contentDisplay="CENTER" focusTraversable="false" layoutX="66.0" layoutY="353.0" prefHeight="37.0" prefWidth="431.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="fourthAnswar" contentDisplay="CENTER" focusTraversable="false" layoutX="66.0" layoutY="419.0" prefHeight="37.0" prefWidth="431.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXRadioButton>
+            <Separator fx:id="sbar2" layoutX="60.0" layoutY="211.0" prefHeight="0.0" prefWidth="995.0" />
+            <Separator fx:id="sbar1" layoutX="60.0" layoutY="12.0" orientation="VERTICAL" prefHeight="200.0" />
+            <VBox fx:id="resultPane" alignment="CENTER" layoutX="187.0" layoutY="93.0" prefHeight="392.0" prefWidth="919.0" style="-fx-background-color: #ffffff;" visible="false" AnchorPane.leftAnchor="187.0" AnchorPane.rightAnchor="143.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="62.0" prefWidth="484.0" text="Thanks For Giving This Examination">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="scoreBoard" alignment="CENTER" prefHeight="62.0" prefWidth="484.0" text="Your Score - 1/2">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane prefHeight="100.0" prefWidth="919.0">
+                     <children>
+                        <Label fx:id="failedLabel" alignment="CENTER" layoutX="400.0" layoutY="17.0" prefHeight="47.0" prefWidth="119.0" text="Failed" textFill="RED" visible="false" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="17.0">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="passedLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="400.0" layoutY="18.0" prefHeight="45.0" prefWidth="138.0" text="Passed" textFill="#26ff00" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="18.0">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="72.0" prefWidth="1249.0" style="-fx-background-color: #81d4fa;" BorderPane.alignment="CENTER">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <HBox alignment="CENTER_RIGHT" layoutX="714.0" layoutY="2.0" prefHeight="70.0" prefWidth="535.0" spacing="50.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXButton fx:id="submitA" focusTraversable="false" prefHeight="41.0" prefWidth="137.0" style="-fx-background-color: #ff6f00;" text="Submit" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXButton>
+                  <JFXButton fx:id="nextQ" defaultButton="true" focusTraversable="false" prefHeight="41.0" prefWidth="137.0" styleClass="nextButton" stylesheets="@../style.css" text="Next" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets right="30.0" />
+               </padding>
+            </HBox>
+         </children></AnchorPane>
+   </bottom>
+</BorderPane>

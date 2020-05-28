@@ -1,0 +1,29 @@
+.buton{
+    -fx-background-radius: 20px;
+    -fx-border-color: #8d6e63;
+    -fx-border-radius: 20px;
+}
+
+.nextButton{
+    -fx-background-color:  #66bb6a;
+    -fx-background-radius: 20px;
+    -fx-border-color: #8d6e63;
+    -fx-border-radius: 20px;
+}
+
+.nextButton:hover {
+    -fx-background-color: #e0e0e0;
+    -fx-text-fill: black;
+}
+.label:hover {
+    -fx-background-color: #e0e0e0;
+    -fx-text-fill: black;
+    -fx-opacity: 0.8;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: white;
+}
+
+.label:hover #out{
+    -fx-fill: black;
+}
